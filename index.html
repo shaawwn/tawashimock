@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yakiniku Tawashi</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <img class="navbar__icon" src="./assets//Instagram_icon.png">
+            <img class="navbar__icon" src="./assets/line.png">
+            <div class="navbar__icon">
+                <svg class="red-circle"></svg>
+            </div>
+        </nav>
+        <!-- Logo -->
+        <img src="./assets/logo.png">
+        <!-- Hours -->
+        <section class="hours">
+            <section class="hours__sub">
+                <p class="hours__text">Sunday</p>
+                <p class="hours__text">Monday</p>
+                <p class="hours__text">Tuesday</p>
+                <p class="hours__text">Wednesday</p>
+                <p class="hours__text">Thursday</p>
+                <p class="hours__text">Friday</p>
+                <p class="hours__text">Saturday</p>
+            </section> 
+            <section class="hours__sub">
+                <p class="hours__text">Closed</p>
+                <p class="hours__text">Closed</p>
+                <p class="hours__text">5-10pm</p>
+                <p class="hours__text">5-10pm</p>
+                <p class="hours__text">5-10pm</p>
+                <p class="hours__text">5-10pm</p>
+                <p class="hours__text">5-10pm</p>
+            </section>
+        </section>
+        <!-- Contact buttons -->
+        <section class="buttons">
+            <button onClick="openPhoneApp()" class="btn">Make a reservation</button>
+            <!-- <button class="btn">Call us</button> -->
+        </section>
+        </div>
+        </nav>
+    </div>
+
+    <script>
+        function openPhoneApp() {
+          var phoneNumber = '1234567890';
+    
+          window.location.href = 'tel:' + phoneNumber;
+        }
+      </script>
+
+</body>
+</html>
