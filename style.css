@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +12,16 @@ html {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
+hr {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -65,10 +75,13 @@ body {
 
 .page__title {
     font-size: 2.5rem;
-    color: white;
+    color: rgba(255, 255, 255, .8);
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
+    font-weight: 100;
 }
+
+
 /* Landing */
 
 .landing {
@@ -79,13 +92,14 @@ body {
 }
 
 .logo {
-    /* margin-top: 300px; */
+    margin-top: 40px;
+    /* background-color: red; */
 }
 
 .hours {
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .hours__sub {
@@ -101,9 +115,8 @@ body {
 
 .menu-carousel {
     overflow: scroll;
-    margin-top: auto;
-    margin-bottom: auto;
-    /* background-color: green; */
+    /* margin-top: auto; */
+    /* margin-bottom: auto; */
     padding: 1rem;
 }
 
@@ -112,10 +125,22 @@ body {
     margin-right: 20px;
     box-shadow: 0px 0px 30px rgb(70,98,135);
 }
+
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    background-color: rgba(70,98,135, .5);
+    /* position: sticky; */
+    /* bottom: 0px; */
+}
+
+/* Misc */
 .buttons {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0 auto;
     width: 100%;
     padding: 1rem;
     justify-content: space-between;
