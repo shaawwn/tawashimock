@@ -10,8 +10,10 @@
 <body>
     <div class="container">
         <nav class="navbar">
-            <img class="navbar__icon" src="./assets//Instagram_icon.png">
-            <img class="navbar__icon" src="./assets/line.png">
+            <a href="https://www.instagram.com/yakiniku_tawashi_honolulu/">
+                <img class="navbar__icon" src="./assets//Instagram_icon.png">
+            </a>
+            <img onClick="openLineApp()" class="navbar__icon" src="./assets/line.png">
             <div class="navbar__icon">
                 <svg class="red-circle"></svg>
             </div>
@@ -53,6 +55,14 @@
           var phoneNumber = '1234567890';
     
           window.location.href = 'tel:' + phoneNumber;
+        }
+
+        function openLineApp() {
+        // The custom URI scheme for the Line app
+        var lineAppURI = 'line://';
+
+        // Attempt to open the Line app
+        window.location.href = lineAppURI;
         }
       </script>
 
