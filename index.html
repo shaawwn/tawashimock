@@ -13,14 +13,23 @@
             <a href="https://www.instagram.com/yakiniku_tawashi_honolulu/">
                 <img class="navbar__icon" src="./assets//Instagram_icon.png">
             </a>
-            <img onClick="openLineApp()" class="navbar__icon" src="./assets/line.png">
+            <img name="line-btn" class="navbar__icon" src="./assets/line.png">
             <div class="navbar__icon">
                 <svg class="red-circle"></svg>
             </div>
         </nav>
-        <!-- Logo -->
+
+        <!-- Divide into sections -->
+        <main>
+
+            <!-- Landing page -->
+
+            <!-- Menu -->
+
+            <!-- Misc/Footer -->
+
+        </main>
         <img src="./assets/logo.png">
-        <!-- Hours -->
         <section class="hours">
             <section class="hours__sub">
                 <p class="hours__text">Sunday</p>
@@ -41,28 +50,15 @@
                 <p class="hours__text">5-10pm</p>
             </section>
         </section>
-        <!-- Contact buttons -->
+
         <section class="buttons">
-            <button onClick="openPhoneApp()" class="btn">Make a reservation</button>
-            <!-- <button class="btn">Call us</button> -->
+            <button name="phone-btn" class="btn">Make a reservation</button>
         </section>
         </div>
         </nav>
     </div>
 
-    <script>
-        function openPhoneApp() {
-          var phoneNumber = '1234567890';
-    
-          window.location.href = 'tel:' + phoneNumber;
-        }
-
-        function openLineApp() {
-
-        var lineAppURI = 'https://line.me/R/ti/p/<LINEID>';
- 
-        window.location.href = lineAppURI;
-        }
+    <script src="./scripts.js">
       </script>
 
 </body>
